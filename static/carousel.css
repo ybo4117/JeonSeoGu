@@ -8,7 +8,6 @@ body {
   color: #5a5a5a;
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -34,14 +33,19 @@ body {
   height: 32rem;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
+
+
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
   text-align: center;
+
 }
 .marketing h2 {
   font-weight: 400;
