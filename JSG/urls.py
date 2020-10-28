@@ -19,10 +19,10 @@ import JSG.views as views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('JSG/main/', views.main),
+    path('JSG/index/', views.index),
     path('JSG/population/', views.population),
     path('JSG/work/', views.work),
     path('JSG/corona/', views.corona),
-    path('JSG/news_issue/', views.news_issue),
+    path('JSG/news/', views.news),
     
 ]

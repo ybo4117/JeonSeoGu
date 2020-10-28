@@ -1,32 +1,28 @@
-<!DOCTYPE HTML>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>JeonSeoGu</title>
-	<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
-</head>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
 <body>
 	<div id="header">
 		<div class="clearfix">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="LOGO" height="52" width="362"></a>
+				<a href="/JSG/index/"><img src="{% static 'images/logo.png' %}" alt="LOGO" height="52" width="332"></a>
 			</div>
 			<ul class="navigation">
 				<li class="active">
-					<a href="index.html">메인</a>
+					<a href="/JSG/index/">메인</a>
 				</li>
 				<li>
-					<a href="population.html">경북의 인구수</a>
+					<a href="/JSG/population/">경북의 인구수</a>
 				</li>
 				<li>
-					<a href="work.html">경북의 취업률</a>
+					<a href="/JSG/work/">경북의 취업률</a>
 				</li>
 				<li>
-					<a href="corona.html">코로나19</a>
+					<a href="/JSG/corona/">코로나19</a>
 				</li>
 				<li>
-					<a href="news.html">코로나 뉴스 & 이슈</a>
+					<a href="/JSG/news/">코로나 뉴스 & 이슈</a>
 				</li>
 			</ul>
 		</div>
@@ -50,46 +46,46 @@
 				<li>
 					<div class="frame1">
 						<div class="box">
-							<img src="images/meeting.jpg" alt="Img" height="130" width="197">
+							<img src="{% static 'images/meeting.jpg' %}" alt="Img" height="130" width="197">
 						</div>
 					</div>
 					<p>
 						<b>돈내놔</b> 알겠지
 					</p>
-					<a href="index.html" class="more">후원 링크</a>
+					<a href="/JSG/index/" class="more">후원 링크</a>
 				</li>
 				<li>
 					<div class="frame1">
 						<div class="box">
-							<img src="images/handshake.jpg" alt="Img" height="130" width="197">
+							<img src="{% static 'images/handshake.jpg' %}" alt="Img" height="130" width="197">
 						</div>
 					</div>
 					<p>
 						<b>김현기시바</b> 그래도 니가 한규보다 낫다
 					</p>
-					<a href="index.html" class="more">후원 링크</a>
+					<a href="/JSG/index/" class="more">후원 링크</a>
 				</li>
 				<li>
 					<div class="frame1">
 						<div class="box">
-							<img src="images/smile.jpg" alt="Img" height="130" width="197">
+							<img src="{% static 'images/smile.jpg' %}" alt="Img" height="130" width="197">
 						</div>
 					</div>
 					<p>
 						<b>임한규야발</b> 3년내에 뒤지길 바라요
 					</p>
-					<a href="index.html" class="more">후원 링크</a>
+					<a href="/JSG/index/" class="more">후원 링크</a>
 				</li>
 				<li>
 					<div class="frame1">
 						<div class="box">
-							<img src="images/family-small.jpg" alt="Img" height="130" width="197">
+							<img src="{% static 'images/family-small.jpg' %}" alt="Img" height="130" width="197">
 						</div>
 					</div>
 					<p>
 						<b>돈갖고와</b> 제바류ㅠ
 					</p>
-					<a href="index.html" class="more">후원 링크</a>
+					<a href="/JSG/index/" class="more">후원 링크</a>
 				</li>
 			</ul>
 		</div>
@@ -130,4 +126,4 @@
 		</div>
 	</div>
 </body>
-</html>
+{% endblock %}

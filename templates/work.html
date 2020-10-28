@@ -1,34 +1,29 @@
-<<<<<<< HEAD
-<!DOCTYPE HTML>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>About - Law Firm Web Template</title>
-	<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
-</head>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
 <body>
 	<div id="header">
 		<div class="clearfix">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="LOGO" height="52" width="362"></a>
+				<a href="/JSG/index/"><img src="{% static 'images/logo.png' %}" alt="LOGO" height="52" width="332"></a>
 			</div>
 			<ul class="navigation">
-				<li>
-					<a href="index.html">메인</a>
-				</li>
-				<li>
-					<a href="population.html">경북의 인구수</a>
-				</li>
-				<li class="active">
-					<a href="work.html">경북의 취업률</a>
-				</li>
-				<li>
-					<a href="corona.html">코로나19</a>
-				</li>
-				<li>
-					<a href="news.html">코로나 뉴스 & 이슈</a>
-				</li>
+					<li>
+						<a href="/JSG/index/">메인</a>
+					</li>
+					<li>
+						<a href="/JSG/population/">경북의 인구수</a>
+					</li>
+					<li class="active">
+						<a href="/JSG/work/">경북의 취업률</a>
+					</li>
+					<li>
+						<a href="/JSG/corona/">코로나19</a>
+					</li>
+					<li>
+						<a href="/JSG/news/">코로나 뉴스 & 이슈</a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -76,48 +71,4 @@
 		</div>
 	</div>
 </body>
-</html>
-=======
-{% extends 'base.html' %}
-{% block content %}
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
-      <a class="navbar-brand" href="/JSG/main/">전서구</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/JSG/population/"> 경북의 인구수</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/JSG/work/"> 경북의 취업률 </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/JSG/corona/"> 코로나19 </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/JSG/news_issue/"> 코로나 뉴스 & 이슈 </a>
-          </li>
-         <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>-->
-        </ul>
-   
-      </div>
-    </nav>
-  </header>
-  
-  <main role="main">
-  
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-  
-<h1>경북의 취업률 페이지</h1>
 {% endblock %}
->>>>>>> fabdd250b2416f8c18a90734e3eb4285ffef703d

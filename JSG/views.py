@@ -5,9 +5,9 @@ import os
 
 # Create your views here.
 
-def main(request):
+def index(request):
     
-    return render(request, 'main.html')
+    return render(request, 'index.html')
 
 def population(request):
     
@@ -21,6 +21,6 @@ def corona(request):
     
     return render(request, 'corona.html')
 
-def news_issue(request):
+def news(request):
     
-    return render(request, 'news_issue.html')
+    return render(request, 'news.html')
