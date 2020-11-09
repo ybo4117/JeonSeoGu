@@ -5,6 +5,76 @@
         <meta charset="UTF-8">
         <title>JeonSeoGu</title>
         <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+
+        <script type="text/javaScript" language="javascript">
+
+            function fn_goMenu(url, brd_id, brd_gubun, data_Gubun){
+                
+                $("#brdId").val(brd_id);
+                $("#brdGubun").val(brd_gubun);
+                $("#dataGubun").val(data_Gubun);
+            
+                var frm = $("#menuFrm");
+                frm.attr("action", url);
+                frm.submit();
+            }
+            
+            function fn_boardView(url, brdId, brdGubun, ncvContSeq, board_id, dataGubun){
+                $("#brdId").val(brdId);
+                $("#brdGubun").val(brdGubun);
+                $("#ncvContSeq").val(ncvContSeq);
+                $("#contSeq").val(ncvContSeq);
+                $("#board_id").val(board_id);
+                $("#dataGubun").val(dataGubun);
+            
+                var frm = $("#menuFrm");
+                frm.attr("action", url);
+                frm.submit();
+            }
+            
+            function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
+                
+                $("#brdId").val(brdId);
+                $("#brdGubun").val(brdGubun);
+                $("#ncvContSeq").val(ncvContSeq);
+                $("#contSeq").val(ncvContSeq);
+                $("#board_id").val(board_id);
+                $("#gubun").val(gubun);
+                
+                var frm = $("#menuFrm");
+                frm.attr("action", url);
+                frm.submit();
+                
+            }
+            
+            
+            function search( where ){
+                
+                var thisForm = $("#"+ where);
+                var thisSearch = $(thisForm).find("#searchTerm");
+                var cont = $(thisSearch).val();
+                
+                //특수문자 체크
+                if (containsChars(cont,"~!@#$%^&*()+|`=\\[]{};:'\".<>/?")) {
+                    alert("특수문자는 제외하고 검색해주시기 바랍니다.");
+                    $(thisSearch).val("");
+                    event.preventDefault();
+                    return false;
+                }else if ( cont == "" || cont == null || cont == undefined){
+                    alert("검색어를 입력하세요");
+                    $(thisSearch).focus();
+                    event.preventDefault();
+                    return false;
+                }
+                
+                return true;		
+                
+            }
+            
+            
+            
+            </script>
+
     </head>
 
 

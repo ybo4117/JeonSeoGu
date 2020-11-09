@@ -32,8 +32,110 @@
 		<div class="clearfix">
 			<h1>코로나 그래프</h1>
 			<div class="frame2">
-            <!-- 여기 그래프 넣어쥬ㅜ세요 -->
-			</div>
+				<table border = "1" align="center" width="800">
+				<tr>
+					
+					{% for th in THead %}
+					
+					{% autoescape off %}
+					<th>{{th}}</th>
+				{% endautoescape %}
+					
+				{% endfor %}
+				</tr>
+
+				<tr>
+				{% for tb in TBody %}
+				{% autoescape off %}
+				<td>{{tb}}</td>
+				{% endautoescape %}
+			<!-- 여기 그래프 넣어쥬ㅜ세요 -->
+			{% endfor %}
+		</tr>
+
+		<tr>
+			{% for tb2 in TBody2 %}
+			{% autoescape off %}
+			<td>{{tb2}}</td>
+			{% endautoescape %}
+		<!-- 여기 그래프 넣어쥬ㅜ세요 -->
+		{% endfor %}
+	</tr>
+
+		</table>
+
+
+		<table border = "1" align="center" width="800" >
+			{% for th in THead_2 %}
+					
+			{% autoescape off %}
+			<th>{{th}}</th>
+		{% endautoescape %}
+			
+		{% endfor %}
+		</tr>
+
+			<tr>
+			{% for tb in TBody_2 %}
+			{% autoescape off %}
+			<td>{{tb}}</td>
+			{% endautoescape %}
+		<!-- 여기 그래프 넣어쥬ㅜ세요 -->
+			{% endfor %}
+			</tr>
+
+			<tr>
+				{% for tb2 in TBody2_2 %}
+				{% autoescape off %}
+				<td>{{tb2}}</td>
+				{% endautoescape %}
+			<!-- 여기 그래프 넣어쥬ㅜ세요 -->
+			{% endfor %}
+			</tr>
+		</table>
+		<img src="http://www.gb.go.kr/Main/data/corona/corona_gb_new.png"/>
+		<table border="1" align="center" width="800">
+			<tr>
+				<th rowspan="2">구분</th>
+				<th colspan = "4">확진환자현황</th>
+				<th colspan = "3">검사현황</th>
+				<th colspan= "3">접촉자</th>
+			</tr>
+			<tr>
+				<td>계</td>
+				<td>격리중</td>
+				<td>해제</td>
+				<td>사망</td>
+				<td>계</td>
+				<td>검사중</td>
+				<td>음성</td>
+				<td>계</td>
+				<td>격리중</td>
+				<td>음성</td>
+			</tr>
+			<tr>
+				{% autoescape off %}
+				{% for tb3 in TBody3 %}
+
+				<td>{{tb3}}</td>
+
+				{% endfor %}
+				{% endautoescape %}
+			</tr>
+			<tr>
+				{% autoescape off %}
+				{% for tb3_2 in TBody3_2 %}
+
+				<td>{{tb3_2}}</td>
+
+				{% endfor %}
+				{% endautoescape %}
+			</tr>
+
+		</table>
+
+		</div>		
+	</div>
 		</div>
 	</div>
 	<div id="footer">

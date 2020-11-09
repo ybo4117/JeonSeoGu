@@ -31,7 +31,90 @@
 		<div class="clearfix">
 			<h1>취업률 그래프</h1>
 			<div class="frame2">
-            <!-- 여기 그래프 넣어쥬ㅜ세요 -->
+
+			<table width="960" border="1">
+				<thead>
+					<tr>
+						<th>분기</th>
+						<th>지역별</th>
+						<th>취업자수 (명)</th>
+						<th>전년도 동분기 취업자수 증감(%)</th>
+						<th>취업률 (%)</th>
+						<th>전년도 동분기 취업률 증감 (%p)</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						{% autoescape off %}
+						{% for th1 in THead1h1 %}
+						<td rowspan="2">{{th1}}</td>
+						{% endfor %}
+						{% endautoescape %}
+						
+						{% autoescape off %}
+						{% for tb1t in TBody1hT1 %}
+						<td>{{tb1t}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+						{% autoescape off %}
+						{% for tb1 in TBody1h1 %}
+						<td>{{tb1}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+					</tr>
+
+					<tr>
+						{% autoescape off %}
+						{% for tb1t in TBody1hT2 %}
+						<td>{{tb1t}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+						{% autoescape off %}
+						{% for tb2 in TBody1h2 %}
+						<td>{{tb2}}</td>
+						{% endfor %}
+						{% endautoescape %}
+					</tr>
+
+					<tr>
+						{% autoescape off %}
+						{% for th2 in THead1h2 %}
+						<td rowspan="2">{{th2}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+						{% autoescape off %}
+						{% for tb1t in TBody1hT1 %}
+						<td>{{tb1t}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+						{% autoescape off %}
+						{% for tb3 in TBody1h3 %}
+						<td>{{tb3}}</td>
+						{% endfor %}
+						{% endautoescape %}
+					</tr>
+
+					<tr>
+						{% autoescape off %}
+						{% for tb1t in TBody1hT2 %}
+						<td>{{tb1t}}</td>
+						{% endfor %}
+						{% endautoescape %}
+
+						{% autoescape off %}
+						{% for tb4 in TBody1h4 %}
+						<td>{{tb4}}</td>
+						{% endfor %}
+						{% endautoescape %}
+					</tr>
+				</tbody>
+			</table>
 			</div>
 		</div>
 	</div>
