@@ -1,4 +1,4 @@
-{% load static %}
+ {% load static %}
 /* Website template by freewebsitetemplates.com */
 body {
 	background-color: #e2e2e2;
@@ -27,7 +27,7 @@ img {
 	position: relative; /* This protects the inner element from being blurred */
 }
 .clearfix {
-	width: 960px;
+	width: 1200px;
 	margin: 0 auto;
 }
 .clearfix:after {
@@ -91,10 +91,8 @@ img {
 	text-align: center;
 }
 .frame2 {
-	background:#FFF;
-	height: 400px;
+	background: #e2e2e2;
 	width: 924px;
-	margin: 0 auto 18px;
 	padding: 6px 7px 0;
 	text-align: center;
 }
@@ -123,7 +121,7 @@ img {
 /*------------ HEADER ------------*/
 #header {
 	background: #8B0404;
-	padding: 40px 0 46px;
+	padding: 16px 0 16px;
 }
 /** logo **/
 .logo {
@@ -134,7 +132,7 @@ img {
 .navigation {
 	float: right;
 	list-style: none;
-	margin: 28px 0 0;
+	margin: 36px 0 0;
 	padding: 0;
 }
 .navigation li {
@@ -144,7 +142,8 @@ img {
 }
 .navigation li > a {
 	color: #ACAAAA;
-	font: bold 30px, "나눔스퀘어";
+	font-family:"나눔스퀘어";
+	font-size: 20px;
 	text-decoration: none;
 	text-shadow: 1px 1px #000;
 	text-transform: uppercase;
@@ -159,28 +158,27 @@ img {
 	
 }
 #contents > div.clearfix:first-child {
-	width: 940px;
-
+	width: 1200px;
+	margin: 0 auto;
 	padding: 30px 10px 0;
 }
 #contents img {
 	border: 1px solid rgba(231, 231, 231, 0.8);
 }
 h1 {
-	color: #57614e;
-	font: 29px/30px "나눔스퀘어", Times, serif;
-	margin: 0 0 12px;
+	color: #111;
+	font-family:"나눔스퀘어";
+	font-size: 30px;
+	margin: 20px 0 12px;
 	text-transform: uppercase;
 }
 h2 {
-	color: #626262;
-	font: 19px/24px "나눔스퀘어", Times, serif;
+	font: 24px/36px "나눔스퀘어", Times, serif;
 	letter-spacing: 2px;
-	margin: 0;
 	text-transform: uppercase;
 }
 p {
-	color: #626262;
+	color: #111111;
 	font: 14px/24px Arial, Helvetica, sans-serif;
 	margin: 0 0 24px;
 }
@@ -197,29 +195,29 @@ p a:hover {
 	padding: 0;
 }
 .graph .pop_graph {
-	background: #000;
 	float:left;
 	border-bottom: 1px solid #fff;
 	padding: 30px 0;
-	width: 50%;
+	width: 100%;
 }
 .graph .pop_graph > h2 {
-	color: #728063;
-	width: 940px;
+	text-align: center;
+	color: #111;
+	width: 1200px;
 	margin: 0 auto 24px;
 	padding: 0 10px;
 }
 /** 여기가 취업률 그래프 **/
 .graph .work_graph {
-	background:#fff;
 	float:left;
 	border-bottom: 1px solid #fff;
 	padding: 30px 0;
-	width: 50%;
+	width: 100%;
 }
 .graph .work_graph > h2 {
-	color: #728063;
-	width: 940px;
+	text-align: center;
+	color: #111;
+	width: 1200px;
 	margin: 0 auto 24px;
 	padding: 0 10px;
 }
@@ -228,8 +226,9 @@ p a:hover {
 	padding: 30px 0;
 }
 .support > h2 {
-	color: #728063;
-	width: 940px;
+	text-align: center;
+	color: #111;
+	width: 1200px;
 	margin: 0 auto 24px;
 	padding: 0 10px;
 }
@@ -239,7 +238,7 @@ p a:hover {
 }
 .support li {
 	float: left;
-	width: 220px;
+	width: 280px;
 	margin: 0 10px;
 }
 .support li p {
@@ -345,6 +344,32 @@ p a:hover {
 #contents .images img.box {
 	border: 5px solid #fff;
 }
+
+/*------------ TABLE ------------*/
+table {
+	margin: 20px 0 20px;
+	border: 1px solid #555;
+	border-collapse: collapse;
+	font-family: "나눔스퀘어";
+	
+}
+table th {
+	background: #777;
+	color: #fff;
+	border: solid #555;
+	padding: 8px 0 8px;
+
+}
+table td {
+	background: #ccc;
+	color: #111;
+	border: solid #999;
+	padding: 8px 0 8px;
+}
+table a {
+	color: #333;
+}
+
 /*------------ FOOTER ------------*/
 #footer {
 	background: #d9d9d9 url="images/bg-footer.png", repeat-x left top;
@@ -353,7 +378,7 @@ p a:hover {
 #footer .section {
 	float: left;
 	min-height: 146px;
-	width: 259px;
+	width: 339px;
 	border-left: 1px solid #c2c2c2;
 	padding: 30px;
 }
@@ -382,31 +407,6 @@ p a:hover {
 	color: #b5c1aa;
 	font: 11px/30px Arial, Helvetica, sans-serif;
 	margin: 0;
-	padding-right: 10px;
-	text-align: right;
+	text-align: center;
 	text-transform: uppercase;
-}
-#footnote .connect {
-	float: left;
-	display: inline-block;
-	margin: 0 10px;
-	padding: 6px 0;
-}
-#footnote .connect a {
-	display: inline-block;
-	height: 18px;
-	width: 18px;
-	margin-right: 6px;
-}
-#footnote .connect a.facebook {
-	background-position: 0 -112px;
-}
-#footnote .connect a.twitter {
-	background-position: 0 -140px;
-}
-#footnote .connect a.googleplus {
-	background-position: 0 -168px;
-}
-#footnote .connect a.pinterest {
-	background-position: 0 -196px;
 }

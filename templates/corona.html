@@ -7,7 +7,7 @@
 	<div id="header">
 		<div class="clearfix">
 			<div class="logo">
-				<a href="/JSG/index/"><img src="{% static 'images/logo.png' %}" alt="LOGO" height="52" width="332"></a>
+				<a href="/JSG/index/"><img src="{% static 'images/logo.jpg' %}" alt="LOGO" height="93" width="248"></a>
 			</div>
 			<ul class="navigation">
 				<li>
@@ -33,9 +33,9 @@
 			<h1>코로나 그래프</h1>
 			<div class="frame2">
 
-				<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9034948a-9acf-45cd-83b6-6346a59cee29&autoAuth=true&ctid=86840d27-05da-4a0f-9a35-c76e03e8d2bd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWVhc3QtYXNpYS1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+				
 
-				<table border = "1" align="center" width="800">
+				<table align="center" width="1200">
 				<tr>
 					
 					{% for th in THead %}
@@ -68,7 +68,7 @@
 		</table>
 
 
-		<table border = "1" align="center" width="800" >
+		<table align="center" width="1200" >
 			{% for th in THead_2 %}
 					
 			{% autoescape off %}
@@ -96,8 +96,8 @@
 			{% endfor %}
 			</tr>
 		</table>
-		<img src="http://www.gb.go.kr/Main/data/corona/corona_gb_new.png"/>
-		<table border="1" align="center" width="800">
+		<iframe width="1200" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9034948a-9acf-45cd-83b6-6346a59cee29&autoAuth=true&ctid=86840d27-05da-4a0f-9a35-c76e03e8d2bd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWVhc3QtYXNpYS1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+		<table align="center" width="1200">
 			<tr>
 				<th rowspan="2">구분</th>
 				<th colspan = "4">확진환자현황</th>
