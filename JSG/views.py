@@ -19,7 +19,7 @@ def population(request):
     options = wd.ChromeOptions()
     options.add_argument('headless')
     options.add_argument('disable-gpu')
-    driver = wd.Chrome(r'C:\Project\JeonSeoGu\JeonSeoGu\chromedriver.exe', options=options)
+    driver = wd.Chrome(r'C:\Project\JeonSeoGu\chromedriver.exe', options=options)
     driver.implicitly_wait(3)
 
     driver.get('https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B040A3&conn_path=I2')
@@ -97,7 +97,7 @@ def work(request):
     options = wd.ChromeOptions()
     options.add_argument('headless')
     options.add_argument('disable-gpu')
-    driver = wd.Chrome(r'C:\Project\JeonSeoGu\JeonSeoGu\chromedriver.exe', options=options)
+    driver = wd.Chrome(r'C:\Project\JeonSeoGu\chromedriver.exe', options=options)
     driver.implicitly_wait(3)
 
     driver.get('https://kosis.kr/statHtml/statHtml.do?orgId=383&tblId=DT_38301_2013_N1021&vw_cd=MT_ZTITLE&list_id=383_38301_004&seqNo=&lang_mode=ko&language=kor&obj_var_id=&itm_id=&conn_path=MT_ZTITLE')
